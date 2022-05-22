@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+# Tiny colored fetch script
+# Requires Nerd Font to display the icons
+# elenapan @ github
+
+LC_ALL=C
+LANG=C
+
+f=3 b=4
+for j in f b; do
+  for i in {0..7}; do
+    printf -v $j$i %b "\e[${!j}${i}m"
+  done
+done
+d=$'\e[1m'
+t=$'\e[0m'
+v=$'\e[7m'
+
+# Items
+sep=
+s=$d$f0$sep$t
+
+p=
+k=
+sh=
+pk=
+w=
+
+phn="$(getprop ro.product.model)"
+kernel="$(uname -r | cut -d '-' -f1)"
+shell=$("$SHELL" --version)
+shell=${shell% *}
+pkgs="$(apt list --installed 2>/dev/null | wc -l)"
+uptime=$(free --mega | sed -n -E '2s/^[^0-9]*([0-9]+) *([0-9]+).*/'"${space}"'\2 \/ \1MB/p')
+percent=$(termux-battery-status 2> /dev/null | grep percentage | awk '{print $2}' | sed "s/,//g")
+status=$(termux-battery-status 2> /dev/null | grep status | awk '{print $2}' | sed "s/,//g" | sed "s/\"//g")
+
+# (\ /)
+# ( · ·)
+# c(")(")
+
+# (\ /)
+# ( . .)
+# c(")(")
+
+cat << EOF
+
+             $d$f1$p  $t$phn
+   (\ /)     $f3$k  $t$kernel
+   ( $d. .$t)    $f2$sh  $t$shell
+   c($f1"$t)($f1"$t)   $f5$pk  $t$pkgs (dpkg,pkg)
+             $f4$w  $t$percent% ($status) 
+
+EOF
