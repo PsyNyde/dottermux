@@ -12,7 +12,7 @@
    <!--<a href="https://discord.gg/2RfJb3CVfb">
       <img src="https://img.shields.io/discord/723849691552284772?color=cb92f2&labelColor=151515&style=for-the-badge"/>
    </a> -->
-	<img src="https://badges.pufler.dev/visits/smolbit/dottermux?style=for-the-badge&color=aa759f&logoColor=white&labelColor=151515"/>
+	<img src="https://badges.strrl.dev/visits/smolbit/dottermux?style=for-the-badge&color=aa759f&logoColor=white&labelColor=151515"/>
   
   <img alt="" src="https://badges.pufler.dev/updated/smolbit/dottermux?style=for-the-badge&color=90a959&logoColor=white&labelColor=151515"/>
   <br>
