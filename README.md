@@ -3,18 +3,18 @@
 <div align="center">
    <p></p>
    <a href="#">
-      <img src="https://img.shields.io/github/stars/smolbit/dottermux?color=%23ac4142&labelColor=%23151515&style=for-the-badge">
+      <img src="https://img.shields.io/github/stars/simplyvoid/dottermux?color=%23ac4142&labelColor=%23151515&style=for-the-badge">
    </a>
    <a href="https://github.com/WahidIslamLinad/startpage/network/members/">
-      <img src="https://img.shields.io/github/forks/smolbit/dottermux?color=%236a9fb5&labelColor=%23151515&style=for-the-badge">
+      <img src="https://img.shields.io/github/forks/simplyvoid/dottermux?color=%236a9fb5&labelColor=%23151515&style=for-the-badge">
    </a>
-   <img src="https://img.shields.io/github/repo-size/smolbit/dottermux?color=%23d0d0d0&labelColor=%23151515&style=for-the-badge">
+   <img src="https://img.shields.io/github/repo-size/simplyvoid/dottermux?color=%23d0d0d0&labelColor=%23151515&style=for-the-badge">
    <!--<a href="https://discord.gg/2RfJb3CVfb">
       <img src="https://img.shields.io/discord/723849691552284772?color=cb92f2&labelColor=151515&style=for-the-badge"/>
    </a> -->
-	<img src="https://badges.strrl.dev/visits/smolbit/dottermux?style=for-the-badge&color=aa759f&logoColor=white&labelColor=151515"/>
+	<img src="https://badges.strrl.dev/visits/simplyvoid/dottermux?style=for-the-badge&color=aa759f&logoColor=white&labelColor=151515"/>
   
-  <img alt="" src="https://badges.pufler.dev/updated/smolbit/dottermux?style=for-the-badge&color=90a959&logoColor=white&labelColor=151515"/>
+  <img alt="" src="https://badges.pufler.dev/updated/simplyvoid/dottermux?style=for-the-badge&color=90a959&logoColor=white&labelColor=151515"/>
   <br>
 </div>
 
@@ -33,7 +33,7 @@
 
 <h2></h2>
 
-## ❖ .termux <img align="right" src="https://img.shields.io/tokei/lines/github/smolbit/dottermux?style=for-the-badge&color=90a959&logoColor=white&labelColor=151515"/>
+## ❖ .termux <img align="right" src="https://img.shields.io/tokei/lines/github/simplyvoid/dottermux?style=for-the-badge&color=90a959&logoColor=white&labelColor=151515"/>
 
 Termux dots for my android :)
 `readme wip` 
