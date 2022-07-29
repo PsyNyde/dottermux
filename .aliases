@@ -1,13 +1,3 @@
-#Change
-alias chcolor="~/.scripts/colorscheme/colors.sh"
-alias chfont="~/.scripts/fonts/fonts.sh"
-alias chzsh="~/.scripts/zsh/changetheme.sh"
-
-#Config
-alias fontused="bat ~/.config/mytermux/fonts/used.log"
-alias colorused="bat ~/.config/mytermux/colorscheme/used.log"
-alias zshused="bat ~/.config/mytermux/zsh/used.log"
-
 #System    
 alias q="exit"
 alias c="clear"
@@ -24,19 +14,6 @@ alias convi="ffmpeg -i $1 -c:v libx264 -crf 25 $2"
 
 #Ping    
 alias pg="ping google.com"
-
-#MyIP (Local) Pre
-alias myip="bash ~/.scripts/system/ip.sh simcard"
-alias myipwifi="bash ~/.scripts/system/ip.sh wifi"
-alias myiphotspot="~/.scripts/system/ip.sh hotspot"
-alias myipvpn="~/.scripts/system/ip.sh vpn"
-alias myipall="~/.scripts/system/ip.sh all"
-
-#Music    
-alias n="ncmpcpp"
-alias mkill="mpd --kill"
-alias m="music"
-alias ncmpcpp-compile="~/myTermux/compile/install/ncmpcpp-compile.sh"
 
 #Color Toys
 alias 256colors2="~/.scripts/toys/256colors2.pl"
@@ -86,7 +63,6 @@ alias lp="exa --icons -lgha --group-directories-first"
 alias la="exa --icons -a"
 alias lt="exa --icons --tree"
 alias lta="exa --icons --tree -lgha"
-alias bat="bat --theme Dracula"
 
 #proot-distro
 alias prot="cd $PREFIX/var/lib/proot-distro"
@@ -104,27 +80,15 @@ alias mpconf="nvim /data/data/com.termux/files/usr/etc/mpd.conf"
 #ncmpcpp    
 alias ncmconf="nvim ~/.config/ncmpcpp/config"
 
-#neovim
-alias nviminit="nvim ~/.config/nvim/init.lua"
-alias nvimtheme="nvim ~/.config/nvim/lua/chadrc.lua"
-alias nvimplug="nvim ~/.config/nvim/lua/pluginList.lua"
-alias nvimmap="nvim ~/.config/nvim/lua/mappings.lua"
-alias nvimpacnit="nvim ~/.config/nvim/lua/packerInit.lua"
-alias nvimsin="nvim ~/.config/nvim/lua/core/xshin.lua"
-alias nvimhighlight="nvim ~/.config/nvim/lua/hightlights.lua"
-alias nvimcore="nvim ~/.config/nvim/lua/core/init.lua"
-
 #zsh
 alias zshconf="nvim ~/.zshrc"
 
 #neofetch    
 alias neoconf="nvim ~/.config/neofetch/config.conf"
 alias rxconf="nvim ~/.local/bin/rxfetch"
-alias neoscript="nvim ~/.config/neofetch/script.sh"
 alias fetch="bash ~/.scripts/system/fetch.sh $@"
 alias fetchconf="nvim ~/.scripts/system/fetch.sh"
 
-alias awesomeconf="nvim ~/.config/awesomeshot/awesomeshot.conf"
 
 #git
 alias gitgraph="git log --all --decorate --oneline --graph"
@@ -143,12 +107,6 @@ alias refresh="source $HOME/.zshrc"
 #Unsource
 alias unsource="exec $SHELL -l"
 
-#PID Login
-alias loginconf="nvim ~/.scripts/login.sh"
-alias exit="if [ -f ~/.scripts/pid/login ]; then rm ~/.scripts/pid/login; fi && exit"
-
-#MyIP
-alias myipconf="nvim ~/.scripts/ip.sh"
 
 #termux-reload
 alias reload="termux-reload-settings"

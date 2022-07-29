@@ -45,4 +45,4 @@ Termux dots for my android :)
 
 ### ❖ Screenshots:(wip)
 	
-![img](https://i.imgur.com/7UhqUae.png)
+![img](assets/preview.jpg)
