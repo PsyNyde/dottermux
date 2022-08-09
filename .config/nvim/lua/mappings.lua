@@ -65,6 +65,7 @@ map("v", "<leader>/", ":lua require('Comment.api').toggle_linewise_op(vim.fn.vis
 -- Insert Map
 map("i", "<C-E>", "<End>")
 map("i", "<C-A>", "<Home>")
+map("i", "jk", "<ESC>")
 
 -- Shift tab
 map("i", "<S-TAB>", "<ESC><<<Ins>")
