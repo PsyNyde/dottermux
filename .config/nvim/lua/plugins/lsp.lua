@@ -24,6 +24,7 @@ lsp_installer.setup {
 
 local servers = {
   "sumneko_lua",
+  "pyright",
 }
 
 for _, a in ipairs(servers) do

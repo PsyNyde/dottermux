@@ -11,6 +11,7 @@ function Minimal()
     opt.laststatus = 2
     opt.signcolumn = 'yes'
     opt.foldcolumn = '0'
+    cmd(':LspStart')
   else
     opt.number = false
     opt.relativenumber = false
@@ -19,6 +20,7 @@ function Minimal()
     opt.laststatus = 0
     opt.signcolumn = 'no'
     opt.foldcolumn = '1'
+    cmd(':LspStop')
   end
   active = not active
 end
@@ -47,9 +49,6 @@ map("n", "<ESC>", ":nohlsearch<CR>")
 map("n", "<leader>m", ":lua Minimal()<CR>")
 map("n", "<leader>n", ":set relativenumber!<CR>")
 
--- Hard update
-map("n", "<leader>u", ":tabnew | term cd $HOME/.config/nvim && git reset --hard HEAD && git pull<CR>")
-
 -- Telescope
 map("n", "<leader><space>", ":Telescope<CR>")
 map("n", "ff", ":Telescope find_files<CR>")
@@ -59,13 +58,12 @@ map("n", "<C-N>", ":NvimTreeToggle<CR>")
 map("n", "<C-B>", ":NvimTreeFocus<CR>")
 
 -- Comment
-map("n", "<leader>/", ":lua require('Comment.api').toggle_current_linewise()<CR>")
-map("v", "<leader>/", ":lua require('Comment.api').toggle_linewise_op(vim.fn.visualmode())<CR>")
+map("n", "<leader>/", "<Plug>(comment_toggle_linewise_current)")
+map("v", "<leader>/", "<Plug>(comment_toggle_linewise_visual)")
 
 -- Insert Map
 map("i", "<C-E>", "<End>")
 map("i", "<C-A>", "<Home>")
-map("i", "jk", "<ESC>")
 
 -- Shift tab
 map("i", "<S-TAB>", "<ESC><<<Ins>")
