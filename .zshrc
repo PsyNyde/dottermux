@@ -3,15 +3,13 @@ ZSH_THEME="simple"
 plugins=(
   git 
   zsh-autosuggestions 
-  zsh-syntax-highlighting 
-  bgnotify
-  thefuck
+  fast-syntax-highlighting
   fzf
 )
 export FZF_BASE=$PREFIX/bin
 eval "$(zoxide init zsh)"
 
-PATH="$PREFIX/bin:$HOME/.scripts:$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
+PATH="$PREFIX/bin:$HOME/.scripts:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/go/bin:$PATH"
 export PATH
 
 export TERM=xterm-256color 
