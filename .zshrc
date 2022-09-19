@@ -15,6 +15,9 @@ export PATH
 export TERM=xterm-256color 
 
 source $ZSH/oh-my-zsh.sh
-#source $HOME/.config/lf/icons
 source $HOME/.aliases
-source $HOME/.autostart
+
+#auto-start
+
+bunnyfetch
+
