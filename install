@@ -1,4 +1,4 @@
-pkg i -y zsh bat curl wget zoxide ripgrep neovim exa lua-language-server fzf git
+pkg i -y zsh bat curl wget zoxide ripgrep neovim exa lua-language-server fzf git gh perl clang termux-api
 
 rm /data/data/com.termux/files/usr/etc/motd*
 
