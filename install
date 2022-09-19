@@ -1,9 +1,13 @@
-pkg i -y zsh bat curl wget zoxide ripgrep neovim exa lua-language-server
+pkg i -y zsh bat curl wget zoxide ripgrep neovim exa lua-language-server fzf git
 
 echo "\n"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "\n"
+git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git \
+  ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 echo "cp -Rv ./{.,}* $HOME/"
 
